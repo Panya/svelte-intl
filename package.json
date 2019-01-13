@@ -18,7 +18,6 @@
     "i18n"
   ],
   "files": [
-    "README.md",
     "module.js",
     "dist"
   ],
