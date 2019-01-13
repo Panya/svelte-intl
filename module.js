@@ -38,7 +38,8 @@ export function intl(store, {
 
     formatMessage.setup({
       locale: currentLocale,
-      translations: locales
+      translations: locales,
+      missingTranslation: 'ignore'
     });
 
     currentLocale = newLocale;
