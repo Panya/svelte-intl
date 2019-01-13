@@ -23,6 +23,14 @@
   ],
   "author": "Mikhail Korepanov <panyakor@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Panya/svelte-intl"
+  },
+  "bugs": {
+    "url": "https://github.com/Panya/svelte-intl/issues"
+  },
+  "homepage": "https://github.com/Panya/svelte-intl",
   "dependencies": {
     "format-message": "6.2.1"
   },
