@@ -37,7 +37,7 @@ export function intl(store, {
     }
 
     formatMessage.setup({
-      locale: currentLocale,
+      locale: newLocale,
       translations: locales,
       missingTranslation: 'ignore'
     });
