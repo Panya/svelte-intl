@@ -6,7 +6,7 @@ export default {
   output: {
     file: 'dist/svelte-intl.js',
     format: 'umd',
-    name: 'svelte-intl'
+    name: 'svelte.intl'
   },
   plugins: [
     resolve(),
