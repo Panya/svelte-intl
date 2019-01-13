@@ -76,4 +76,13 @@ describe('intl', () => {
 
     expect(_('foo.baz')).toBe('foo.baz');
   });
+
+  it('should warn if locale messages are missing', () => {
+    const store = intl(new Store());
+    console.error = jest.fn();
+    store.intl.setLocale('ru');
+
+    expect(console.error).toHaveBeenCalledWith('[svelte-intl] Couldn\'t find the "ru" locale.');
+    console.error.mockRestore();
+  });
 });
