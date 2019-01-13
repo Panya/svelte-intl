@@ -1,6 +1,7 @@
 ## svelte-intl
 
 [![Build Status](https://travis-ci.org/Panya/svelte-intl.svg?branch=master)](https://travis-ci.org/Panya/svelte-intl)
+[![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 
 Internationalize your Svelte apps using [format-message](https://github.com/format-message/format-message).
 
