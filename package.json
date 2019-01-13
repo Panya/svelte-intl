@@ -7,9 +7,10 @@
   "scripts": {
     "clean": "rimraf dist/",
     "build": "npm run clean && rollup -c",
-    "prepublish": "npm run lint && npm run build",
+    "prepublish": "npm run lint && npm run size && npm run build",
     "test": "npm run build && jest",
-    "lint": "eslint module.js"
+    "lint": "eslint module.js",
+    "size": "size-limit"
   },
   "keywords": [
     "svelte",
@@ -41,6 +42,13 @@
     "rollup": "1.1.0",
     "rollup-plugin-commonjs": "9.2.0",
     "rollup-plugin-node-resolve": "4.0.0",
+    "size-limit": "0.21.1",
     "svelte": "2.16.0"
-  }
+  },
+  "size-limit": [
+    {
+      "path": "module.js",
+      "limit": "6.5 KB"
+    }
+  ]
 }
