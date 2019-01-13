@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "semi": 1,
+    "eqeqeq": 1,
+    "no-console": 0,
+    "object-curly-spacing": [1, "always"],
+    "no-unused-vars": [2, { "vars": "all", "args": "after-used" }]
+  }
+}

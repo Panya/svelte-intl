@@ -1,0 +1,38 @@
+{
+  "name": "svelte-intl",
+  "version": "0.0.1",
+  "description": "Internationalize your Svelte apps",
+  "main": "dist/svelte-intl.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "npm run clean && rollup -c",
+    "prepublish": "npm run lint && npm run build",
+    "test": "npm run build && jest",
+    "lint": "eslint index.js"
+  },
+  "keywords": [
+    "svelte",
+    "format-message",
+    "intl",
+    "i18n"
+  ],
+  "files": [
+    "README.md",
+    "index.js",
+    "dist"
+  ],
+  "author": "Mikhail Korepanov <panyakor@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "format-message": "6.2.1"
+  },
+  "devDependencies": {
+    "eslint": "5.12.0",
+    "jest": "23.6.0",
+    "rimraf": "2.6.3",
+    "rollup": "1.1.0",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-node-resolve": "4.0.0",
+    "svelte": "2.16.0"
+  }
+}

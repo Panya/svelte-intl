@@ -1,0 +1,22 @@
+## svelte-intl
+
+Internationalize your Svelte apps using [format-message](https://github.com/format-message/format-message).
+
+```js
+import { intl } from 'svelte-intl';
+import { Store } from 'svelte';
+
+const store = intl(new Store());
+
+store.extendLocales({
+  en: {
+    hello: 'Hello, {name}'
+  }
+});
+
+store.setLocale('en');
+
+const { _ } = store.get();
+
+_('hello', { name: 'John' }) // => 'Hello, John'
+```
