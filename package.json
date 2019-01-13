@@ -9,7 +9,7 @@
     "build": "npm run clean && rollup -c",
     "prepublish": "npm run lint && npm run build",
     "test": "npm run build && jest",
-    "lint": "eslint index.js"
+    "lint": "eslint module.js"
   },
   "keywords": [
     "svelte",
