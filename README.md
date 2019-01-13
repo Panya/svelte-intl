@@ -10,17 +10,26 @@ Internationalize your Svelte apps using [format-message](https://github.com/form
 import { intl } from 'svelte-intl';
 import { Store } from 'svelte';
 
-const store = intl(new Store());
-
-store.intl.extendLocales({
-  en: {
-    hello: 'Hello, {name}'
+const store = intl(new Store(), {
+  locale: 'en',
+  locales: {
+    en: {
+      hello: 'Hello, {name}'
+    }
   }
 });
 
-store.intl.setLocale('en');
+store.intl.extendLocales({
+  ru: {
+    hello: 'Привет, {name}'
+  }
+});
 
 const { _ } = store.get();
 
-_('hello', { name: 'John' }) // => 'Hello, John'
+console.log(_('hello', { name: 'John' })); // => 'Hello, John'
+
+store.intl.setLocale('ru');
+
+console.log(_('hello', { name: 'Вася' })); // => 'Привет, Вася'
 ```
