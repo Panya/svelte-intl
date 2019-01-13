@@ -49,10 +49,6 @@ export function intl(store, {
     });
   });
 
-  if (locale) {
-    store.fire('locale', locale);
-  }
-
   store.intl = {
     setLocale(locale) {
       store.fire('locale', locale);
@@ -61,6 +57,10 @@ export function intl(store, {
       locales = merge(locales, newLocales);
     }
   };
+
+  if (locale) {
+    store.intl.setLocale(locale);
+  }
 
   return store;
 }

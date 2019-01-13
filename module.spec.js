@@ -85,4 +85,15 @@ describe('intl', () => {
     expect(console.error).toHaveBeenCalledWith('[svelte-intl] Couldn\'t find the "ru" locale.');
     console.error.mockRestore();
   });
+
+  it('should set locale from options', () => {
+    const store = intl(new Store(), {
+      locales: {
+        ru: {}
+      },
+      locale: 'ru'
+    });
+
+    expect(store.get().locale).toBe('ru');
+  });
 });
