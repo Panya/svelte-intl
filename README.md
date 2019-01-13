@@ -1,5 +1,7 @@
 ## svelte-intl
 
+[![Build Status](https://travis-ci.org/Panya/svelte-intl.svg?branch=master)](https://travis-ci.org/Panya/svelte-intl)
+
 Internationalize your Svelte apps using [format-message](https://github.com/format-message/format-message).
 
 ```js
