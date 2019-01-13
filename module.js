@@ -50,8 +50,8 @@ export function intl(store, {
   });
 
   store.intl = {
-    setLocale(locale) {
-      store.fire('locale', locale);
+    setLocale(newLocale) {
+      store.fire('locale', newLocale);
     },
     extendLocales(newLocales) {
       locales = merge(locales, newLocales);
