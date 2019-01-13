@@ -10,13 +10,13 @@ import { Store } from 'svelte';
 
 const store = intl(new Store());
 
-store.extendLocales({
+store.intl.extendLocales({
   en: {
     hello: 'Hello, {name}'
   }
 });
 
-store.setLocale('en');
+store.intl.setLocale('en');
 
 const { _ } = store.get();
 
