@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Internationalize your Svelte apps",
   "main": "dist/svelte-intl.js",
+  "module": "module.js",
   "scripts": {
     "clean": "rimraf dist/",
     "build": "npm run clean && rollup -c",
@@ -18,7 +19,7 @@
   ],
   "files": [
     "README.md",
-    "index.js",
+    "module.js",
     "dist"
   ],
   "author": "Mikhail Korepanov <panyakor@gmail.com>",
