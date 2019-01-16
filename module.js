@@ -45,7 +45,7 @@ export function intl(store, {
     currentLocale = newLocale;
     store.set({
       locale: newLocale,
-      _: getFormattedMessage
+      t: getFormattedMessage
     });
   });
 

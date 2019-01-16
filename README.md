@@ -25,11 +25,11 @@ store.intl.extendLocales({
   }
 });
 
-const { _ } = store.get();
+const { t } = store.get();
 
-console.log(_('hello', { name: 'John' })); // => 'Hello, John'
+console.log(t('hello', { name: 'John' })); // => 'Hello, John'
 
 store.intl.setLocale('ru');
 
-console.log(_('hello', { name: 'Вася' })); // => 'Привет, Вася'
+console.log(t('hello', { name: 'Вася' })); // => 'Привет, Вася'
 ```
