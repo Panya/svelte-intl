@@ -12,14 +12,14 @@ import { Store } from 'svelte';
 
 const store = intl(new Store(), {
   locale: 'en',
-  locales: {
+  translations: {
     en: {
       hello: 'Hello, {name}'
     }
   }
 });
 
-store.intl.extendLocales({
+store.intl.extendTranslations({
   ru: {
     hello: 'Привет, {name}'
   }

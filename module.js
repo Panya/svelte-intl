@@ -16,29 +16,29 @@ const merge = (obj1 = {}, obj2 = {}) => (
 );
 
 export function intl(store, {
-  locales, locale
-} = { locales: {} }) {
+  translations, locale
+} = { translations: {} }) {
   let currentLocale;
 
   const getFormattedMessage = (
     path,
     interpolations
   ) => {
-    const message = getPath(locales[currentLocale], path);
+    const message = getPath(translations[currentLocale], path);
     if (!message) return path;
 
     return formatMessage(message, interpolations);
   };
 
   store.on('locale', newLocale => {
-    if (!(newLocale in locales)) {
+    if (!(newLocale in translations)) {
       console.error(`[svelte-intl] Couldn't find the "${newLocale}" locale.`);
       return;
     }
 
     formatMessage.setup({
       locale: newLocale,
-      translations: locales,
+      translations,
       missingTranslation: 'ignore'
     });
 
@@ -53,8 +53,8 @@ export function intl(store, {
     setLocale(newLocale) {
       store.fire('locale', newLocale);
     },
-    extendLocales(newLocales) {
-      locales = merge(locales, newLocales);
+    extendTranslations(newTranslations) {
+      translations = merge(translations, newTranslations);
     }
   };
 

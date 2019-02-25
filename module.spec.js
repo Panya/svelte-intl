@@ -14,11 +14,11 @@ describe('intl', () => {
     const store = intl(new Store());
 
     expect(store.intl.setLocale).toBeInstanceOf(Function);
-    expect(store.intl.extendLocales).toBeInstanceOf(Function);
+    expect(store.intl.extendTranslations).toBeInstanceOf(Function);
   });
 
   it('should set locale', () => {
-    const store = intl(new Store(), { locales: { en: {} } });
+    const store = intl(new Store(), { translations: { en: {} } });
     store.intl.setLocale('en');
     const { t, locale } = store.get();
 
@@ -26,10 +26,10 @@ describe('intl', () => {
     expect(t).toBeInstanceOf(Function);
   });
 
-  it('should extend locales', () => {
-    const store = intl(new Store(), { locales: { en: {} } });
+  it('should extend translations', () => {
+    const store = intl(new Store(), { translations: { en: {} } });
     store.intl.setLocale('en');
-    store.intl.extendLocales({
+    store.intl.extendTranslations({
       en: {
         hello: 'hello',
         message: 'message'
@@ -42,9 +42,9 @@ describe('intl', () => {
   });
 
   it('should translate nested keys', () => {
-    const store = intl(new Store(), { locales: { en: {} } });
+    const store = intl(new Store(), { translations: { en: {} } });
     store.intl.setLocale('en');
-    store.intl.extendLocales({
+    store.intl.extendTranslations({
       en: {
         foo: {
           bar: {
@@ -61,9 +61,9 @@ describe('intl', () => {
   });
 
   it('should return path if key is missing', () => {
-    const store = intl(new Store(), { locales: { en: {} } });
+    const store = intl(new Store(), { translations: { en: {} } });
     store.intl.setLocale('en');
-    store.intl.extendLocales({
+    store.intl.extendTranslations({
       en: {
         foo: {
           bar: {
@@ -88,7 +88,7 @@ describe('intl', () => {
 
   it('should set locale from options', () => {
     const store = intl(new Store(), {
-      locales: {
+      translations: {
         ru: {}
       },
       locale: 'ru'
