@@ -4,7 +4,7 @@
 [![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 [![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
 
-Internationalize your Svelte apps using [format-message](https://github.com/format-message/format-message).
+Internationalize your Svelte 2 apps using [format-message](https://github.com/format-message/format-message).
 
 ```js
 import { intl } from 'svelte-intl';
