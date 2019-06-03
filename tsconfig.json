@@ -2,11 +2,13 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "es5",
-    "lib": ["es2017", "es7", "es6", "dom"],
+    "module": "es6",
+    "lib": ["es2015", "es7", "es6", "dom"],
     "declaration": true,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
+    "importHelpers": true,
 
     /* Strict Type-Checking Options */
     "strict": true,

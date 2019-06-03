@@ -31,19 +31,16 @@
   },
   "homepage": "https://github.com/Panya/svelte-intl",
   "dependencies": {
-    "format-message": "6.2.1"
+    "format-message": "^6.2.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
-    "eslint": "5.16.0",
     "jest": "^24.8.0",
     "rollup": "1.12.4",
     "rollup-plugin-buble": "0.19.6",
-    "rollup-plugin-commonjs": "10.0.0",
-    "rollup-plugin-node-resolve": "5.0.0",
     "rollup-plugin-typescript2": "^0.21.1",
     "svelte": "^3.4.4",
     "ts-jest": "^24.0.2",
