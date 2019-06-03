@@ -1,35 +1,34 @@
 ## svelte-intl
 
-[![Build Status](https://travis-ci.org/Panya/svelte-intl.svg?branch=master)](https://travis-ci.org/Panya/svelte-intl)
 [![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 [![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
 
-Internationalize your Svelte 2 apps using [format-message](https://github.com/format-message/format-message).
+Internationalize your Svelte 3 apps using [format-message](https://github.com/format-message/format-message).
 
-```js
-import { intl } from 'svelte-intl';
-import { Store } from 'svelte';
+```html
+<script context="module">
+  import { locale, translations, getBrowserLocale } from 'svelte-intl';
 
-const store = intl(new Store(), {
-  locale: 'en',
-  translations: {
+  // If you want to split your bundle, you can call this multiple times,
+  // the dictionaries will be merged.
+  translations.update({
     en: {
-      hello: 'Hello, {name}'
-    }
-  }
-});
+      hello: 'Hello, {name}',
+    },
+    pt: {
+      hello: 'Olá, {name}',
+    },
+  })
 
-store.intl.extendTranslations({
-  ru: {
-    hello: 'Привет, {name}'
-  }
-});
+  locale.set(getBrowserLocale())
+</script>
 
-const { t } = store.get();
+<script>
+  // use _ or translate
+  import { _ } from 'svelte-intl'
 
-console.log(t('hello', { name: 'John' })); // => 'Hello, John'
+  export let name = 'John'
+</script>
 
-store.intl.setLocale('ru');
-
-console.log(t('hello', { name: 'Вася' })); // => 'Привет, Вася'
+<h1> {$_('name', { name })} </h1>
 ```

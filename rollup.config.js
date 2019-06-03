@@ -1,17 +1,16 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import buble from 'rollup-plugin-buble';
+import typescript from 'rollup-plugin-typescript2';
+import pkg from './package.json';
 
 export default {
-  input: 'module.js',
-  output: {
-    file: 'dist/svelte-intl.js',
-    format: 'umd',
-    name: 'svelte.intl'
-  },
+  input: 'src/index.ts',
+  output: [{
+    file: pkg.module,
+    format: 'es',
+  }, {
+    file: pkg.main,
+    format: 'cjs',
+  }],
   plugins: [
-    resolve(),
-    commonjs(),
-    buble()
-  ]
+    typescript(),
+  ],
 };
