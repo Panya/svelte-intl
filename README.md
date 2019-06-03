@@ -30,5 +30,5 @@ Internationalize your Svelte 3 apps using [format-message](https://github.com/fo
   export let name = 'John'
 </script>
 
-<h1> {$_('name', { name })} </h1>
+<h1> {$_('hello', { name })} </h1>
 ```
