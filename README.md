@@ -1,5 +1,7 @@
 ## svelte-intl
 
+> Not yet published, just a [PR](https://github.com/Panya/svelte-intl/pull/1) for now
+
 [![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 [![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
 
