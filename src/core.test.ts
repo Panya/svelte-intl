@@ -62,7 +62,7 @@ describe('#translate', () => {
     const log = console.error as jest.Mock
     locale.set('ru')
 
-    expect(log).toHaveBeenCalledWith('[svelte-intl] Couldn\'t find the "ru" locale.')
+    expect(log).toHaveBeenCalledWith('[svelte-3-intl] Couldn\'t find the "ru" locale.')
     log.mockRestore()
   })
 
