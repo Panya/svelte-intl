@@ -1,6 +1,6 @@
-# svelte-intl
+# svelte-3-intl
 
-[![NPM Version](https://img.shields.io/npm/v/svelte-3-intl.svg)](https://npm.im/svelte-intl)
+[![NPM Version](https://img.shields.io/npm/v/svelte-3-intl.svg)](https://npm.im/svelte-3-intl)
 
 Sizes (svelte-3-intl and format-message): 
 
@@ -18,7 +18,7 @@ npm i svelte-3-intl format-message # format message is a peer dependency
 
 ```html
 <script context="module">
-  import { locale, translations, getBrowserLocale } from 'svelte-intl';
+  import { locale, translations, getBrowserLocale } from 'svelte-3-intl';
 
   // If you want to split your bundle, you can call this multiple times,
   // the dictionaries will be merged.
@@ -36,7 +36,7 @@ npm i svelte-3-intl format-message # format message is a peer dependency
 
 <script>
   // use _ or translate
-  import { _ } from 'svelte-intl'
+  import { _ } from 'svelte-3-intl'
 
   export let name = 'John'
 </script>

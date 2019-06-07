@@ -1,6 +1,6 @@
 {
   "name": "svelte-3-intl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Internationalize your Svelte 3 apps",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -13,13 +13,12 @@
   },
   "keywords": [
     "svelte",
+    "3",
+    "svelte-3",
+    "svelte3",
     "format-message",
     "intl",
     "i18n"
-  ],
-  "files": [
-    "module.js",
-    "dist"
   ],
   "author": "Cristóvão Trevisan <cristovao.trevisan@gmail.com>",
   "license": "MIT",
