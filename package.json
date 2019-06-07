@@ -1,9 +1,10 @@
 {
-  "name": "svelte-intl",
-  "version": "0.1.0",
-  "description": "Internationalize your Svelte apps",
+  "name": "svelte-3-intl",
+  "version": "1.0.0",
+  "description": "Internationalize your Svelte 3 apps",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "pretest": "tslint --project tsconfig.json",
     "test": "jest --verbose --silent --coverage",
@@ -20,24 +21,23 @@
     "module.js",
     "dist"
   ],
-  "author": "Mikhail Korepanov <panyakor@gmail.com>",
+  "author": "Cristóvão Trevisan <cristovao.trevisan@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Panya/svelte-intl"
+    "url": "git://github.com/cristovao-trevisan/svelte-intl"
   },
   "bugs": {
-    "url": "https://github.com/Panya/svelte-intl/issues"
+    "url": "https://github.com/cristovao-trevisan/svelte-intl/issues"
   },
-  "homepage": "https://github.com/Panya/svelte-intl",
-  "dependencies": {
-    "format-message": "^6.2.1"
-  },
+  "homepage": "https://github.com/cristovao-trevisan/svelte-intl",
   "peerDependencies": {
+    "format-message": "^6.2.1",
     "svelte": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
+    "format-message": "^6.2.1",
     "jest": "^24.8.0",
     "rollup": "1.12.4",
     "rollup-plugin-buble": "0.19.6",
