@@ -1,8 +1,11 @@
 # svelte-intl
 
 [![NPM Version](https://img.shields.io/npm/v/svelte-3-intl.svg)](https://npm.im/svelte-intl)
-[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-3-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
-[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-3-intl)](https://bundlephobia.com/result?p=format-message@latest)
+
+Sizes (svelte-3-intl and format-message): 
+
+[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-3-intl)](https://bundlephobia.com/result?p=svelte-3-intl@latest)
+[![Package Size](https://badgen.net/bundlephobia/minzip/format-message)](https://bundlephobia.com/result?p=format-message@latest)
 
 Internationalize your Svelte 3 apps using [format-message](https://github.com/format-message/format-message).
 
