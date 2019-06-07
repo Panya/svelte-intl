@@ -3,6 +3,7 @@
     /* Basic Options */
     "target": "es5",
     "module": "es6",
+    "moduleResolution": "node",
     "lib": ["es2015", "es7", "es6", "dom"],
     "declaration": true,
     "sourceMap": true,
