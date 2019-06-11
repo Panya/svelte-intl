@@ -1,24 +1,24 @@
-# svelte-3-intl
+# svelte-intl
 
-[![NPM Version](https://img.shields.io/npm/v/svelte-3-intl.svg)](https://npm.im/svelte-3-intl)
+[![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 
-Sizes (svelte-3-intl and format-message): 
+Sizes (svelte-intl and format-message): 
 
-[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-3-intl)](https://bundlephobia.com/result?p=svelte-3-intl@latest)
+[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
 [![Package Size](https://badgen.net/bundlephobia/minzip/format-message)](https://bundlephobia.com/result?p=format-message@latest)
 
 Internationalize your Svelte 3 apps using [format-message](https://github.com/format-message/format-message).
 
 ## Installation
 ```sh
-npm i svelte-3-intl format-message # format message is a peer dependency
+npm i svelte-intl format-message # format message is a peer dependency
 ```
 
 ## Usage
 
 ```html
 <script context="module">
-  import { locale, translations, getBrowserLocale } from 'svelte-3-intl';
+  import { locale, translations, getBrowserLocale } from 'svelte-intl';
 
   // If you want to split your bundle, you can call this multiple times,
   // the dictionaries will be merged.
@@ -36,7 +36,7 @@ npm i svelte-3-intl format-message # format message is a peer dependency
 
 <script>
   // use _ or translate
-  import { _ } from 'svelte-3-intl'
+  import { _ } from 'svelte-intl'
 
   export let name = 'John'
 </script>
@@ -55,7 +55,7 @@ npm i svelte-3-intl format-message # format message is a peer dependency
 ```html
 <script>
   import { get } from 'svelte/store'
-  import { translate } from 'svelte-3-intl'
+  import { translate } from 'svelte-intl'
 
   const title = get(translate)('title')
 </script>
@@ -84,7 +84,7 @@ npm i svelte-3-intl format-message # format message is a peer dependency
 ```html
 <!-- LanguageSelector.svelte -->
 <script>
-  import { locale, locales } from 'svelte-3-intl'
+  import { locale, locales } from 'svelte-intl'
 
 	const setLocale = e => locale.set(e.target.value)
 </script>
