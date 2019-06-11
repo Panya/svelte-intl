@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
 
-Sizes (svelte-intl and format-message): 
+Sizes (svelte-intl and format-message):
 
 [![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
 [![Package Size](https://badgen.net/bundlephobia/minzip/format-message)](https://bundlephobia.com/result?p=format-message@latest)
@@ -86,7 +86,7 @@ npm i svelte-intl format-message # format message is a peer dependency
 <script>
   import { locale, locales } from 'svelte-intl'
 
-	const setLocale = e => locale.set(e.target.value)
+  const setLocale = e => locale.set(e.target.value)
 </script>
 
 <select value={$locale} on:change={setLocale}>
