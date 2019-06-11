@@ -1,55 +1,50 @@
 {
-  "name": "svelte-intl",
-  "version": "0.1.0",
-  "description": "Internationalize your Svelte apps",
-  "main": "dist/svelte-intl.js",
-  "module": "module.js",
+  "name": "svelte-3-intl",
+  "version": "1.0.1",
+  "description": "Internationalize your Svelte 3 apps",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist/",
-    "build": "npm run clean && rollup -c",
-    "prepublish": "npm run lint && npm run size && npm run build",
-    "test": "npm run build && jest",
-    "lint": "eslint module.js",
-    "size": "size-limit"
+    "pretest": "tslint --project tsconfig.json",
+    "test": "jest --verbose --silent --coverage",
+    "build": "rm -rf dist && rollup -c",
+    "prepublish": "npm test && npm run build"
   },
   "keywords": [
     "svelte",
+    "3",
+    "svelte-3",
+    "svelte3",
     "format-message",
     "intl",
     "i18n"
   ],
-  "files": [
-    "module.js",
-    "dist"
-  ],
-  "author": "Mikhail Korepanov <panyakor@gmail.com>",
+  "author": "Cristóvão Trevisan <cristovao.trevisan@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Panya/svelte-intl"
+    "url": "git://github.com/cristovao-trevisan/svelte-intl"
   },
   "bugs": {
-    "url": "https://github.com/Panya/svelte-intl/issues"
+    "url": "https://github.com/cristovao-trevisan/svelte-intl/issues"
   },
-  "homepage": "https://github.com/Panya/svelte-intl",
-  "dependencies": {
-    "format-message": "6.2.1"
+  "homepage": "https://github.com/cristovao-trevisan/svelte-intl",
+  "peerDependencies": {
+    "format-message": "^6.2.1",
+    "svelte": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
-    "jest": "24.8.0",
-    "rimraf": "2.6.3",
+    "@types/jest": "^24.0.13",
+    "format-message": "^6.2.1",
+    "jest": "^24.8.0",
     "rollup": "1.12.4",
     "rollup-plugin-buble": "0.19.6",
-    "rollup-plugin-commonjs": "10.0.0",
-    "rollup-plugin-node-resolve": "5.0.0",
-    "size-limit": "1.3.5",
-    "svelte": "2.16.1"
-  },
-  "size-limit": [
-    {
-      "path": "module.js",
-      "limit": "6.5 KB"
-    }
-  ]
+    "rollup-plugin-typescript2": "^0.21.1",
+    "svelte": "^3.4.4",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.1"
+  }
 }
