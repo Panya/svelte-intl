@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cristovao-trevisan/svelte-intl"
+    "url": "git://github.com/Panya/svelte-intl"
   },
   "bugs": {
-    "url": "https://github.com/cristovao-trevisan/svelte-intl/issues"
+    "url": "https://github.com/Panya/svelte-intl/issues"
   },
-  "homepage": "https://github.com/cristovao-trevisan/svelte-intl",
+  "homepage": "https://github.com/Panya/svelte-intl",
   "peerDependencies": {
     "format-message": "^6.2.1",
     "svelte": "^3.0.0"
