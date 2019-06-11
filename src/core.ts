@@ -47,7 +47,7 @@ const createLocale = () => {
 
   const setLocale = (newLocale: string) => {
     if (newLocale !== '' && !get(translations)[newLocale]) {
-      console.error(`[svelte-3-intl] Couldn't find the "${newLocale}" locale.`)
+      console.error(`[svelte-intl] Couldn't find the "${newLocale}" locale.`)
       return false
     }
     set(newLocale)
