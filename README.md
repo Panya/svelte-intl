@@ -9,6 +9,10 @@ Sizes (svelte-intl and format-message):
 
 Internationalize your Svelte 3 apps using [format-message](https://github.com/format-message/format-message).
 
+## Svelte 2
+
+For Svelte 2 version see [this branch](https://github.com/Panya/svelte-intl/tree/svelte2).
+
 ## Installation
 ```sh
 npm i svelte-intl format-message # format message is a peer dependency
