@@ -1,8 +1,7 @@
 ## svelte-intl
 
-[![Build Status](https://travis-ci.org/Panya/svelte-intl.svg?branch=master)](https://travis-ci.org/Panya/svelte-intl)
-[![NPM Version](https://img.shields.io/npm/v/svelte-intl.svg)](https://npm.im/svelte-intl)
-[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@latest)
+[![Build Status](https://travis-ci.org/Panya/svelte-intl.svg?branch=svelte2)](https://travis-ci.org/Panya/svelte-intl)
+[![Package Size](https://badgen.net/bundlephobia/minzip/svelte-intl)](https://bundlephobia.com/result?p=svelte-intl@0.1.0)
 
 Internationalize your Svelte 2 apps using [format-message](https://github.com/format-message/format-message).
 
