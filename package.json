@@ -1,6 +1,6 @@
 {
   "name": "svelte-intl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Internationalize your Svelte 3 apps",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
