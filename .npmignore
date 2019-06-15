@@ -2,10 +2,12 @@ node_modules
 src
 coverage
 .rpt2_cache
-.travis-yml
-.jest.config.js
+.travis.yml
+jest.config.js
 .gitignore
 package-lock.json
+yarn.lock
 rollup.config.js
 tsconfig.json
 tslint.json
+.eslintrc
