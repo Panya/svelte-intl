@@ -17,7 +17,7 @@ beforeEach(() => {
 })
 
 describe('#translate', () => {
-  it('basic example shold work', () => {
+  it('basic example should work', () => {
     expect(translate('name')).toBe('Name')
   })
 
