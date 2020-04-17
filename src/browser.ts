@@ -6,12 +6,14 @@ interface IENavigatorLanguage  {
 }
 
 export const getBrowserLocale = (defaultLocale = 'en') => {
-  const targets = window?.navigator.languages || // user language preferences list
-    [
-      (window?.navigator as IENavigatorLanguage).userLanguage || // IE 10-
-      window?.navigator.language ||              // browser ui language
-      defaultLocale,                              // there is no window (sapper | node)
-    ]
+  const targets = typeof window === 'undefined'
+    ? [defaultLocale]  // there is no window (sapper | node/webpack)
+    : window.navigator.languages || // user language preferences list
+      [
+        (window.navigator as IENavigatorLanguage).userLanguage || // IE 10-
+        window.navigator.language, // browser ui language
+      ]
+
   const currentLocales = get(locales)
 
   for (let i = 0; i < targets.length; i = i + 1) {
