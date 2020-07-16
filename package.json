@@ -35,15 +35,15 @@
     "svelte": "^3.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.4",
+    "@types/jest": "^26.0.0",
     "format-message": "^6.2.3",
-    "jest": "^25.1.0",
-    "rollup": "2.6.1",
-    "rollup-plugin-typescript2": "^0.27.0",
-    "svelte": "^3.18.1",
-    "ts-jest": "^25.2.1",
-    "tslint": "^6.1.0",
+    "jest": "^26.0.0",
+    "rollup": "2.21.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "svelte": "^3.24.0",
+    "ts-jest": "^26.1.2",
+    "tslint": "^6.1.2",
     "tslint-config-airbnb": "^5.11.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.0"
   }
 }
