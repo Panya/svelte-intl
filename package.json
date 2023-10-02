@@ -6,7 +6,7 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "pretest": "tslint --project tsconfig.json",
+    "pretest": "eslint ./src",
     "test": "jest --verbose --silent --coverage",
     "build": "rm -rf dist && rollup -c",
     "prepublish": "npm test && npm run build"
@@ -24,26 +24,29 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Panya/svelte-intl"
+    "url": "git://github.com/isaac-mok/svelte-intl"
   },
   "bugs": {
-    "url": "https://github.com/Panya/svelte-intl/issues"
+    "url": "https://github.com/isaac-mok/svelte-intl/issues"
   },
-  "homepage": "https://github.com/Panya/svelte-intl",
+  "homepage": "https://github.com/isaac-mok/svelte-intl",
   "peerDependencies": {
     "format-message": "^6.2.1",
     "svelte": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "format-message": "^6.2.3",
     "jest": "^26.0.0",
     "rollup": "2.21.0",
     "rollup-plugin-typescript2": "^0.27.1",
     "svelte": "^3.24.0",
     "ts-jest": "^26.1.2",
-    "tslint": "^6.1.2",
-    "tslint-config-airbnb": "^5.11.2",
-    "typescript": "^3.8.0"
+    "typescript": "^3.9.10"
   }
 }

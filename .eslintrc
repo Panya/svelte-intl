@@ -1,9 +1,15 @@
 {
   "parserOptions": {
     "ecmaVersion": 7,
-    "sourceType": "module",
+    "sourceType": "module"
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
   "env": {
     "node": true,
     "browser": true,
@@ -15,7 +21,10 @@
     "semi": 1,
     "eqeqeq": 1,
     "no-console": 0,
-    "object-curly-spacing": [1, "always"],
-    "no-unused-vars": [2, { "vars": "all", "args": "after-used" }]
+    "object-curly-spacing": 1,
+    "no-unused-vars": [2, { "vars": "all", "args": "after-used" }],
+    "max-len": [1, { "code": 120 }],
+    "import-name": 0,
+    "@typescript-eslint/no-explicit-any": 0
   }
 }
